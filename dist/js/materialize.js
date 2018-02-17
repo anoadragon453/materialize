@@ -9101,6 +9101,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           return;
         }
 
+        this.$el[0].blur();
         this.isOpen = true;
         if (typeof this.options.onOpen === 'function') {
           this.options.onOpen.call(this);
@@ -9697,6 +9698,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           return;
         }
 
+        this.$el[0].blur();
         this.isOpen = true;
         this._updateTimeFromInput();
         this.showView('hours');
